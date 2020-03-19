@@ -10,6 +10,7 @@ public class InterruptSignLoop implements Runnable {
     @Override
     public void run() {
         int i = 1;
+        //while (i<1000 && !Thread.interrupted()) {
         while (i<1000 && !Thread.currentThread().isInterrupted()) {
             i--;
             System.out.println("hello nss");

@@ -9,15 +9,25 @@ package com.nss.java1.thread2;
 public class InterruptWait implements Runnable {
     @Override
     public void run() {
+        int i = 0;
+        try{
+            while (i<100000){
+                System.out.println(22);
+                i++;
+            }
+            Thread.sleep(1000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
-        try {
+        /*try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-                /*Thread.currentThread().interrupt();
-                e.printStackTrace();*/
+                *//*Thread.currentThread().interrupt();
+                e.printStackTrace();*//*
             throw new RuntimeException(e);
         }
-        System.out.println("nssliu");
+        System.out.println("nssliu");*/
     }
 
     public static void main(String[] args) throws InterruptedException {
