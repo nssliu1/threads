@@ -3,7 +3,6 @@ package com.nss.designpattern2.strategy4.factory;
 import com.nss.designpattern2.strategy4.strategy.Command;
 import com.nss.designpattern2.strategy4.strategy.CommandLinux;
 import com.nss.designpattern2.strategy4.strategy.CommandWindows;
-import com.sun.deploy.util.StringUtils;
 
 /**
  * @author liuzhiheng
